@@ -19,26 +19,30 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a href="./index.html"
             ><span class="logo-blue">Web</span
             ><span class="logo-black">Studio</span></a
           >
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="auth-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -53,30 +57,30 @@
       <section class="section">
         <div class="container">
           <h2 class="hidden">Наші переваги</h2>
-          <ul class="list">
-            <li>
+          <ul class="list list-advances">
+            <li clas="advances-item">
               <h3 class="section-advances">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="advances-item">
+              <p class="advances-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li clas="advances-item">
               <h3 class="section-advances">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="advances-item">
+              <p class="advances-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li clas="advances-item">
               <h3 class="section-advances">ПЛАНУВАННЯ</h3>
-              <p class="advances-item">
+              <p class="advances-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li clas="advances-item">
               <h3 class="section-advances">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="advances-item">
+              <p class="advances-text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -88,7 +92,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="list list-images">
             <li>
               <img src="./images/img1.jpg" width="370" alt="написання коду" />
             </li>
@@ -105,23 +109,23 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="list list-team">
+            <li class="team-item">
               <img src="./images/igor.jpg" width="270" alt="Ігор Дем'яненко" />
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p lang="en" class="job-item">Product Designer</p>
             </li>
-            <li>
+            <li class="team-item">
               <img src="./images/olga.jpg" width="270" alt="Ольга Рєпіна" />
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p lang="en" class="job-item">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-item">
               <img src="./images/mykola.jpg" width="270" alt="Микола Тарасов" />
               <h3 class="team-name">Микола Тарасов</h3>
               <p lang="en" class="job-item">Marketing</p>
             </li>
-            <li>
+            <li class="team-item">
               <img
                 src="./images/mychailo.jpg"
                 width="270"
@@ -144,7 +148,10 @@
         <address class="address">
           <ul class="list">
             <li>
-              <a href="https://goo.gl/maps/1QhM3WFyMhCo5uu47" class="address">
+              <a
+                href="https://goo.gl/maps/1QhM3WFyMhCo5uu47"
+                class="address map"
+              >
                 м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
