@@ -214,10 +214,18 @@ img {
   width: 270px;
 }
 
+.advances-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .list-images {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+.work-img-list {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .list-team {
@@ -233,6 +241,11 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.team-item {
+  flex-basis: calc((100% - 90px) / 3);
+}
+
 .team-border {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -277,7 +290,6 @@ img {
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
-  padding-bottom: 30px;
 }
 
 .projects {
@@ -289,6 +301,7 @@ img {
 .project-item {
   flex-basis: calc((100% - 60px) / 3);
 }
+
 .project-border {
   padding: 20px 24px;
   border-right: 1px solid var(--border);
@@ -325,6 +338,7 @@ img {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   padding: 10px 32px;
+  min-width: 216px;
 }
 
 .button-secondary {
