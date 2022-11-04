@@ -56,10 +56,16 @@ img {
   margin: 0 auto;
 }
 
-.main-nav {
+.header-page {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-site,
+.main-nav,
+.nav-site,
+.auth-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .hidden {
@@ -151,12 +157,11 @@ img {
 /* Hero */
 .hero {
   background-color: var(--color-hero-background);
-  display: block;
-  margin: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   color: var(--color-white);
   font-weight: 900;
@@ -164,7 +169,8 @@ img {
   line-height: 1.3636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto;
 }
 
 .button-hero {
@@ -175,12 +181,18 @@ img {
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
+  margin-top: 30px;
 }
 
 /* Section */
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-work {
+  padding-top: 0;
 }
 
 .section-title {
@@ -213,12 +225,17 @@ img {
   flex-direction: row;
   gap: 30px;
 }
+
 .list-team > .team-item {
   margin-top: 0;
   background: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-border {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-advances {
@@ -237,7 +254,6 @@ img {
   font-weight: var(--fw-500);
   font-size: 16px;
   line-height: 1.1875;
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -282,17 +298,13 @@ img {
 
 .team {
   background-color: var(--secondary-background-color);
-  padding-bottom: 94px;
-}
-.section-portfolio {
-  padding-bottom: 94px;
 }
 
 /* Button */
 .button {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   gap: 8px;
 }
 
@@ -324,12 +336,13 @@ img {
 .button-secondary:focus,
 .button-hero:focus {
   background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 /* Footer */
 .footer {
   background-color: var(--color-hero-background);
-  padding-top: 50px;
+  padding: 60px 0;
 }
 
 .phone,
@@ -358,5 +371,4 @@ img {
   line-height: 1.7143;
   font-style: normal;
   margin-top: 20px;
-  padding-bottom: 60px;
 }
